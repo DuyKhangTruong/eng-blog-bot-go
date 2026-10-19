@@ -1,0 +1,48 @@
+# Blogs eng-blog-bot follows. One per line: Name | Feed URL | Company
+# - Name is the key for already-seen posts in seen.db: never rename an existing line.
+# - Company is what the app shows and filters by (defaults to Name).
+# - Lines starting with # are ignored.
+#
+# Not available as feeds (checked Oct 2026):
+#   DoorDash  careersatdoordash.com answers crawlers with a bot-protection page (HTTP 403)
+#   Uber      uber.com/blog/engineering has no RSS/Atom feed
+
+Cloudflare Blog            | https://blog.cloudflare.com/rss/ | Cloudflare
+Netflix TechBlog           | https://medium.com/feed/netflix-techblog | Netflix
+Airbnb Engineering         | https://medium.com/feed/airbnb-engineering | Airbnb
+Google Developers Blog     | https://developers.googleblog.com/rss/ | Google
+AWS Architecture Blog      | https://aws.amazon.com/blogs/architecture/feed/ | AWS
+Meta Engineering           | https://engineering.fb.com/feed/ | Meta
+Stripe Blog                | https://stripe.com/blog/feed.rss | Stripe
+Spotify Engineering        | https://engineering.atspotify.com/feed/ | Spotify
+Pinterest Engineering      | https://medium.com/feed/pinterest-engineering | Pinterest
+Dropbox Tech               | https://dropbox.tech/feed | Dropbox
+Slack Engineering          | https://slack.engineering/feed/ | Slack
+GitHub Engineering         | https://github.blog/engineering/feed/ | GitHub
+Shopify Engineering        | https://shopify.engineering/blog.atom | Shopify
+Lyft Engineering           | https://eng.lyft.com/feed | Lyft
+Instacart Tech             | https://tech.instacart.com/feed | Instacart
+Grab Engineering           | https://engineering.grab.com/feed.xml | Grab
+Etsy Code as Craft         | https://www.etsy.com/codeascraft/rss | Etsy
+Expedia Group Tech         | https://medium.com/feed/expedia-group-tech | Expedia
+Booking.com Engineering    | https://medium.com/feed/booking-com-development | Booking.com
+Zalando Engineering        | https://engineering.zalando.com/atom.xml | Zalando
+Yelp Engineering           | https://engineeringblog.yelp.com/feed.xml | Yelp
+Stack Overflow Engineering | https://stackoverflow.blog/engineering/feed/ | Stack Overflow
+Salesforce Engineering     | https://engineering.salesforce.com/feed/ | Salesforce
+Atlassian Engineering      | https://www.atlassian.com/engineering/feed | Atlassian
+Datadog Engineering        | https://www.datadoghq.com/blog/engineering/index.xml | Datadog
+Canva Engineering          | https://www.canva.dev/blog/engineering/feed.xml | Canva
+Block Engineering          | https://engineering.block.xyz/blog/rss.xml | Block
+Nubank Engineering         | https://building.nubank.com/feed/ | Nubank
+Mercari Engineering        | https://engineering.mercari.com/en/blog/feed.xml | Mercari
+Wix Engineering            | https://www.wix.engineering/blog-feed.xml | Wix
+Jane Street Tech Blog      | https://blog.janestreet.com/feed.xml | Jane Street
+Mozilla Hacks              | https://hacks.mozilla.org/feed/ | Mozilla
+Fly.io Blog                | https://fly.io/blog/feed.xml | Fly.io
+Tailscale Blog             | https://tailscale.com/blog/index.xml | Tailscale
+PlanetScale Blog           | https://planetscale.com/blog/rss.xml | PlanetScale
+Sentry Blog                | https://blog.sentry.io/feed.xml | Sentry
+HashiCorp Blog             | https://www.hashicorp.com/blog/feed.xml | HashiCorp
+Android Developers Blog    | https://android-developers.googleblog.com/atom.xml | Android
+Kotlin Blog                | https://blog.jetbrains.com/kotlin/feed/ | Kotlin

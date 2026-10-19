@@ -1,0 +1,12 @@
+# Crawl without messaging: new posts show up in the app within the hour and are
+# still announced by your existing morning digest run (plain `eng-blog-bot`).
+[Unit]
+Description=Eng Blogs hourly crawl (no notification)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/eng-blog-bot --no-notify
+Environment=ENG_BLOG_BOT_DIR=%h/Development/eng-blog-bot
+Nice=10
