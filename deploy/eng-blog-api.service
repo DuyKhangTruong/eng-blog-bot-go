@@ -1,0 +1,21 @@
+# HTTP API for the Eng Blogs Android app.
+# Install as a user service on the Pi:
+#   cp eng-blog-api.service ~/.config/systemd/user/
+#   systemctl --user daemon-reload && systemctl --user enable --now eng-blog-api
+#   sudo loginctl enable-linger "$USER"   # keep user services running without a login session
+[Unit]
+Description=Eng Blogs API (eng-blog-bot serve)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+# Binary installed per the README (cp eng-blog-bot ~/.local/bin/); edit if yours lives elsewhere.
+ExecStart=%h/.local/bin/eng-blog-bot serve --addr :8080
+Environment=ENG_BLOG_BOT_DIR=%h/Development/eng-blog-bot
+# Optional: require a token (then set engblogs.apiToken in the app's local.properties).
+#Environment=ENG_BLOG_API_TOKEN=change-me
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

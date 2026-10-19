@@ -1,0 +1,14 @@
+# Install alongside eng-blog-crawl.service:
+#   cp eng-blog-crawl.service eng-blog-crawl.timer ~/.config/systemd/user/
+#   systemctl --user daemon-reload && systemctl --user enable --now eng-blog-crawl.timer
+[Unit]
+Description=Run the Eng Blogs crawl every hour
+
+[Timer]
+# Half past, to stay clear of a morning digest job scheduled on the hour.
+OnCalendar=*-*-* *:30:00
+RandomizedDelaySec=120
+Persistent=true
+
+[Install]
+WantedBy=timers.target
